@@ -1,0 +1,30 @@
+.features{
+    overflow: hidden;
+    background: mintcream;
+}
+.head-fea h1{
+    text-align: center;
+    font-family: 'Monoton';
+    font-size: 40px;
+    background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.feature-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.f-box-left{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.f-box-right{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}

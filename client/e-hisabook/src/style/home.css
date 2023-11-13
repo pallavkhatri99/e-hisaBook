@@ -1,0 +1,11 @@
+html, body, .section-box {
+    block-size: 100%;
+}
+html {
+    scroll-snap-type: y mandatory;
+}
+.section-box {
+    scroll-behavior: smooth;
+    scroll-snap-align: center;
+}
+  

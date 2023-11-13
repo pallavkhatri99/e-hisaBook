@@ -1,0 +1,57 @@
+.section-contact{
+  background: linear-gradient(to right, rgb(52, 232, 158), rgb(15, 52, 67));
+}
+.container-contact {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .text-white{
+    color:white;
+  }
+  .contact-row {
+    margin-bottom: 30px;
+  }
+  
+  .section-title {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .div-trial-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .app-input {
+    width: 82%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .btn-wrapper {
+    text-align: right;
+  }
+  
+  .app-submit {
+    background-color: #4caf50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .app-submit:hover {
+    background-color: #45a049;
+  }
+  

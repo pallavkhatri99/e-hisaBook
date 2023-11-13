@@ -1,0 +1,131 @@
+.container-review h1 {
+  font-size: 24px;
+  margin: 0;
+  text-align: center;
+  font-family: 'Monoton';
+  font-size: 40px;  
+  background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.wrap-container{
+  margin: 0px 20% auto;
+}
+.container-layout{
+  display: flex;
+  height: 300px;
+  flex-direction: row-reverse;
+  gap: 50px;
+  border:1px solid beige;
+  border-radius: 30px;
+  padding: 20px;
+  background-color: wheat; 
+}
+.u-container-layout{
+  display: flex;
+  flex-direction: column;
+}
+.u-image {
+  text-align: center;
+}
+.u-image img {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+} 
+.u-text {
+  font-weight: bold;
+}
+
+/*Button Next and Preview*/
+.btn,
+.btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: absolute;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #777;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn-white::after {
+  background-color: #fff;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn-animated {
+  -webkit-animation: moveInBottom 5s ease-out;
+          animation: moveInBottom 5s ease-out;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+.u-comment-box p{
+  font-family: "Courier New", monospace;
+}
+@-webkit-keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.left{
+  position: relative;
+  float: left;
+  top: -180px;
+  left: 240px;
+}
+.right{
+  position: relative;
+  float: right;
+  top: -180px;
+  left: -335px;
+}
