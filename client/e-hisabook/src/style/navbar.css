@@ -2,6 +2,8 @@
     padding-top: 5px;
     width: 100%;
     height: 65px;
+    position: fixed;
+    z-index: 100;
     /* background-color: #52c41a; 
     background: linear-gradient(to right, rgb(22, 191, 253), rgb(203, 48, 102));
     background: linear-gradient(to right, rgb(255, 0, 204), rgb(51, 51, 153));

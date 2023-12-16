@@ -1,0 +1,18 @@
+.hidden{
+    display: none;
+}
+.btn-box{
+    position: absolute;
+    bottom: 15px;
+    width: 90%;
+} 
+.btn-btn{
+    margin: 5px;
+}
+.selected-row {
+    cursor: pointer;
+    background-color: #8ee993 !important; 
+}
+.row-pointer{
+    cursor: pointer;
+}

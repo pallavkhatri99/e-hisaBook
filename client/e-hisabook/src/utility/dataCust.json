@@ -1,0 +1,220 @@
+{"data": [
+    {
+      "key": 1,
+      "name": "John Doe",
+      "amount": 500.00,
+      "status": "Cr"
+    },
+    {
+      "key": 2,
+      "name": "Alice Smith",
+      "amount": 1200.50,
+      "status": "Dr"
+    },
+    {
+      "key": 3,
+      "name": "Bob Johnson",
+      "amount": 800.25,
+      "status": "Cr"
+    },
+    {
+      "key": 4,
+      "name": "Emily White",
+      "amount": 300.75,
+      "status": "Dr"
+    },
+    {
+      "key": 5,
+      "name": "Charlie Brown",
+      "amount": 1000.20,
+      "status": "Cr"
+    },
+    {
+      "key": 6,
+      "name": "Eva Green",
+      "amount": 600.50,
+      "status": "Dr"
+    }
+  ],
+  "contacts": [
+    {
+      "key": 1,
+      "name" : "Rajesh",
+      "mobNo": "123456000",
+      "address": "123 Main St"
+    },
+    {
+      "key": 2,
+      "name": "Rajesh",
+      "mobNo": "987654000",
+      "address": "456 Oak Ave"
+    },
+    {
+      "key": 3,
+      "name": "Rajesh",
+      "mobNo": "5551230000",
+      "address": "789 Pine Rd"
+    },
+    {
+        "key": 4,
+        "name": "Rajesh",
+        "mobNo": "123456000",
+        "address": "123 Main St"
+      },
+      {
+        "key": 5,
+        "name": "Rajesh",
+        "mobNo": "987654000",
+        "address": "456 Oak Ave"
+      },
+      {
+        "key": 6,
+        "mobNo": "5551230000",
+        "address": "789 Pine Rd"
+      }
+  ],
+  "transactions": [
+    {
+        "transID": 1,
+        "get": 100,
+        "give": 0,
+        "date": "2023-11-17"
+      },
+      {
+        "transID": 2,
+        "get": 0,
+        "give": 150,
+        "date": "2023-11-18"
+      },
+      {
+        "transID": 3,
+        "get": 80,
+        "give": 0,
+        "date": "2023-11-19"
+      },
+      {
+        "transID": 4,
+        "get": 0,
+        "give": 200,
+        "date": "2023-11-20"
+      },
+      {
+        "transID": 5,
+        "get": 120,
+        "give": 0,
+        "date": "2023-11-21"
+      },
+      {
+        "transID": 6,
+        "get": 0,
+        "give": 180,
+        "date": "2023-11-22"
+      },
+      {
+        "transID": 7,
+        "get": 90,
+        "give": 0,
+        "date": "2023-11-23"
+      },
+      {
+        "transID": 8,
+        "get": 0,
+        "give": 250,
+        "date": "2023-11-24"
+      },
+      {
+        "transID": 9,
+        "get": 150,
+        "give": 0,
+        "date": "2023-11-25"
+      },
+      {
+        "transID": 10,
+        "get": 0,
+        "give": 300,
+        "date": "2023-11-26"
+      }
+  ],
+  "CustomerDetails": [
+    {
+      "custName": "John Doe",
+      "phoneNo": "123-456-7890",
+      "address": "123 Main St",
+      "city": "Anytown",
+      "state": "CA",
+      "billingNumber": "B1001"
+    },
+    {
+      "custName": "Jane Smith",
+      "phoneNo": "987-654-3210",
+      "address": "456 Oak St",
+      "city": "Another City",
+      "state": "NY",
+      "billingNumber": "B1002"
+    },
+    {
+      "custName": "Alice Johnson",
+      "phoneNo": "555-123-4567",
+      "address": "789 Elm St",
+      "city": "Some City",
+      "state": "TX",
+      "billingNumber": "B1003"
+    },
+    {
+      "custName": "Bob Williams",
+      "phoneNo": "888-555-1234",
+      "address": "321 Pine St",
+      "city": "New Town",
+      "state": "FL",
+      "billingNumber": "B1004"
+    },
+    {
+      "custName": "Eva Davis",
+      "phoneNo": "777-888-9999",
+      "address": "654 Birch St",
+      "city": "Your City",
+      "state": "IL",
+      "billingNumber": "B1005"
+    },
+    {
+      "custName": "Chris Brown",
+      "phoneNo": "333-444-5555",
+      "address": "987 Maple St",
+      "city": "Everytown",
+      "state": "OH",
+      "billingNumber": "B1006"
+    },
+    {
+      "custName": "Sophia Wilson",
+      "phoneNo": "666-777-8888",
+      "address": "234 Cedar St",
+      "city": "Her City",
+      "state": "WA",
+      "billingNumber": "B1007"
+    },
+    {
+      "custName": "Michael Miller",
+      "phoneNo": "222-333-4444",
+      "address": "567 Walnut St",
+      "city": "His City",
+      "state": "MI",
+      "billingNumber": "B1008"
+    },
+    {
+      "custName": "Olivia Moore",
+      "phoneNo": "444-555-6666",
+      "address": "876 Poplar St",
+      "city": "This City",
+      "state": "PA",
+      "billingNumber": "B1009"
+    },
+    {
+      "custName": "William Harris",
+      "phoneNo": "999-111-2222",
+      "address": "109 Pineapple St",
+      "city": "That City",
+      "state": "GA",
+      "billingNumber": "B1010"
+    }
+  ]
+}

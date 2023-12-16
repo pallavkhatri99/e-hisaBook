@@ -56,6 +56,9 @@ function Branding() {
             <div style={{display:'block',height:'15px'}}></div>
             <span className="typewriter-heading" style={{whiteSpace: 'pre-line'}}>{displayText2}</span>
             </div>
+            <div id='login-block-section'>
+              
+            </div>
           </div>
           <div className="logo-container">
             <motion.img 

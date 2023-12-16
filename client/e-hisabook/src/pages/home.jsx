@@ -12,17 +12,17 @@ import Footer from '../components/mainComponent/footer'
 function Home() {
   return (
     <div>
-        <div className='section-box'>  
+        <div className='section-box' id="home">  
           <Navbar />
           <Branding />
         </div>
-        <div className='section-box'>
+        <div className='section-box' id='features'>
           <Features />
         </div>
-        <div className='section-box'>
+        <div className='section-box' id='pricing'>
           <Pricing />
         </div>
-        <div className='section-box'>
+        <div className='section-box' id=''>
           <Review />
         </div>
         {/* 
@@ -31,7 +31,7 @@ function Home() {
         <div className='section-box'>
           <About />
         </div>
-        <div className='section-box'>
+        <div className='section-box' id='about'>
           <Contact />
         </div>
         <div className='section-box'>
