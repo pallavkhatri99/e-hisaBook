@@ -99,14 +99,14 @@ function Navbar() {
         width={1000}
         footer={[
           <Button key="back" onClick={handleCancel}>
-            Return
+            Close
           </Button>,
-          <Button type="primary" key="login" onClick={login}>
-            Already have account
+          <Button type="link" key="login" onClick={login}>
+            Already have an account ?
           </Button>,
         ]}
       >
-        <RegisterOrLogin operation={open} setOpen={setOpen}/>
+        <RegisterOrLogin operation={open} setOpen={setOpen} setOpenLogin={setOpenLogin} />
       </Modal>
       <Modal
         title="Login"
@@ -116,7 +116,7 @@ function Navbar() {
         onCancel={handleCancel}
         width={400}
         footer={[
-          <Button type="primary" key="login" onClick={registerUser}>
+          <Button type="link" key="login" onClick={registerUser}>
             Create an account?
           </Button>,
         ]}

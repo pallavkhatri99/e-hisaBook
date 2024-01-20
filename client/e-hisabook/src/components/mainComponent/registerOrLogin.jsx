@@ -15,14 +15,15 @@ const layout = {
   };
 
 
-function RegisterOrLogin({operation}) {
+function RegisterOrLogin({operation,setOpen,setOpenLogin}) {
+    console.log(operation,setOpen,setOpenLogin)
     //declaretion
     const [steps,setStep] = useState(0);
     const [formBasicValues,setFormBasicValues] = useState({fname:"",lname:"",gender:"",age:"",occupation:""});
     const [formContactValues,setFormContactValues] = useState({email:"",pnumb:"",address:""});
     const [formVerifyValues,setFormVerifyValues] = useState({emailOTP:"",pnumbOTP:""});
     const appConfig = useContext(ConfigProvider.ConfigContext);
-    console.log(appConfig)
+
 
     //function
     const validateMessages = () => { console.log('validation') }
@@ -50,6 +51,12 @@ function RegisterOrLogin({operation}) {
     const onPrevious = () => {
         setStep(steps-1);
     }
+    const login = () => {
+        setOpen(false);
+        setOpenLogin(true);
+    }
+
+
   return (
     <div style={{display:operation?"block":"none"}}>
         <Steps items={[
@@ -98,7 +105,7 @@ function RegisterOrLogin({operation}) {
                         title="Successfully Create an Account"
                         subTitle="Thanks for creating your account login details will be sent to the Email Address"
                         extra={[
-                        <Button type="primary" key="login">
+                        <Button type="primary" key="login" onClick={login} >
                             Login
                         </Button>,
                         ]}

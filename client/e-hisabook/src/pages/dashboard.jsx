@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import {  FileProtectOutlined,  HomeOutlined, UserOutlined,} from '@ant-design/icons';
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
+import {  FileProtectOutlined,  HomeOutlined, UserOutlined, SettingOutlined, } from '@ant-design/icons';
+import { Breadcrumb, Dropdown, Flex, Layout, Menu, Space, theme } from 'antd';
 import { Outlet, useNavigate } from 'react-router-dom';
+import WlcmHeader from '../components/component/wlcmHeader';
 const { Header, Content, Footer, Sider } = Layout;
 
 function getItem(label, key, icon, children) {  return { key, icon, children, label }; }
@@ -14,7 +15,6 @@ const items = [
     getItem('Record', '5'),
   ]),
 ];
-
 
 function Dashboard() {
   const [collapsed, setCollapsed] = useState(false);
@@ -60,7 +60,11 @@ function Dashboard() {
             padding: 0, 
             background: colorBgContainer,
           }}
-        />
+        >
+         <div className='header-section'>
+            <WlcmHeader/>
+         </div>
+        </Header>
         <Content
           className='content-container'
           style={{

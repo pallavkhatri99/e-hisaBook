@@ -1,12 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import customerLogo from '../../image/dashboard/contacts.png'
 import TransationLogo from '../../image/dashboard/transaction.png'
 import increaseLogo from '../../image/dashboard/increase.png'
 import decreaseLogo from '../../image/dashboard/decrease.png'
-import Calender from '../component/calender'
 import CountUp from 'react-countup';
-import { ArrowDownOutlined, ArrowUpOutlined, RedoOutlined,BarsOutlined ,AppstoreOutlined } from '@ant-design/icons';
-import { Button, Card, Col, Flex, Row, Segmented, Statistic } from 'antd';
+import { ArrowDownOutlined, ArrowUpOutlined, ContactsOutlined,BarsOutlined ,AppstoreOutlined, StockOutlined } from '@ant-design/icons';
+import { Button, Card, Col, Empty, Flex, Row, Segmented, Statistic } from 'antd';  
 import PieChart from '../component/PieChart'
 import ColumnChart from '../component/columnChart'
 
@@ -24,9 +23,25 @@ const options=[
   },
 ]
 
-
 const formatter = (value) => <CountUp end={value} separator="," />;
+
+
 function DashboardFeatures() {
+  //declare variables
+  const [chartShow,setShowChart] = useState(true);
+  const [ColumnChartFilter,setColumnChartFilter] = useState('Yearly');
+
+
+  //function
+  const handleMonths = (n) => {
+    console.log(n)
+  }
+  const handleChartList = (chartList) =>{
+    if(chartList === 'List')
+      setShowChart(false);
+    else 
+      setShowChart(true);    
+  }
   return (
     <div 
       className='DashboardFeatures-box' 
@@ -45,8 +60,8 @@ function DashboardFeatures() {
                   valueStyle={{
                     color: '#3f8600',
                   }}
-                  prefix={<ArrowUpOutlined />}
-                  suffix="%"
+                  prefix={<ContactsOutlined />}
+                  suffix=""
                 />
               </Flex>
             </Card>
@@ -63,8 +78,8 @@ function DashboardFeatures() {
                   valueStyle={{
                     color: '#cf1322',
                   }}
-                  prefix={<ArrowDownOutlined />}
-                  suffix="%"
+                  prefix={<StockOutlined />}
+                  suffix=""
                 />
               </Flex>
             </Card>
@@ -82,7 +97,7 @@ function DashboardFeatures() {
                     color: '#3f8600',
                   }}
                   prefix={<ArrowUpOutlined />}
-                  suffix="%"
+                  suffix="₹"
                 />
               </Flex>
             </Card>
@@ -100,7 +115,7 @@ function DashboardFeatures() {
                     color: '#cf1322',
                   }}
                   prefix={<ArrowDownOutlined />}
-                  suffix="%"
+                  suffix="₹"
                 />
               </Flex>
             </Card>
@@ -108,12 +123,12 @@ function DashboardFeatures() {
         </Row>
       <Row gutter={16} className='block-i'>
         <Col span={12} className='container'>
-          <Segmented options={options} /> 
-           <PieChart />
+          <Segmented options={options} onChange={handleChartList}/> 
+           {chartShow ? <PieChart /> :  <Empty />}
         </Col>
         <Col span={12}>
-          <Segmented options={['Daily', 'Weekly', 'Monthly', 'Quarterly', 'Yearly']} />
-           <ColumnChart />
+          <Segmented options={['Daily', 'Weekly', 'Monthly', 'Quarterly', 'Yearly'].reverse()} onChange={handleMonths}/> 
+          <ColumnChart ColumnChartFilter={ColumnChartFilter} />
         </Col>
       </Row>
     </div>

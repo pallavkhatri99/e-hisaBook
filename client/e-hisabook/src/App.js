@@ -1,6 +1,6 @@
 import React,{ Suspense, lazy } from 'react';
 import { Navigate, Route, Routes  } from 'react-router-dom';
-import { ConfigProvider, Spin, theme } from 'antd';
+import { ConfigProvider, Spin, } from 'antd';
 import './App.css';
 
 const Home = lazy(()=> import('./pages/home'));
@@ -12,7 +12,6 @@ const config = {
   theme:{
     token: {
       colorPrimary: "#52c41a",
-      
       algorithm: "dark",
     },
     components: {
@@ -32,7 +31,7 @@ function App() {
         <ConfigProvider {...config} >
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/App' element={<Dashboard />}>
+          <Route path='/App' element={<Dashboard />} >
             <Route path='' element={<Navigate to="Dashboard" />} />
             <Route path='Dashboard' element={<DashboardFeatures />} />
             <Route path='Customers' element={<Customers />} />
