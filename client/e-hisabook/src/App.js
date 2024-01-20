@@ -7,6 +7,8 @@ const Home = lazy(()=> import('./pages/home'));
 const Dashboard = lazy(()=> import('./pages/dashboard'));
 const DashboardFeatures = lazy(()=> import('./components/mainComponent/dashboardFeatures'));
 const Customers = lazy(()=> import('./pages/customers'));
+const InDevelopment = lazy(()=> import('./pages/inDevelopment'));
+const PageNotFound = lazy(()=> import('./pages/pageNotFound'));
 
 const config = {
   theme:{
@@ -37,11 +39,12 @@ function App() {
             <Route path='Customers' element={<Customers />} />
             <Route path='Reports' >
               <Route index />
-              <Route path='Sales' element={<Customers />} />
-              <Route path='Bill' element={<Customers />} />
-              <Route path='Record' element={<Customers />} />
+              <Route path='Sales' element={<InDevelopment />} />
+              <Route path='Bill' element={<InDevelopment />} />
+              <Route path='Record' element={<InDevelopment />} />
             </Route>
           </Route>
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
         </ConfigProvider>
       </Suspense> 

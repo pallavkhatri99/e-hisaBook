@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { SettingOutlined, PoweroffOutlined, } from '@ant-design/icons';
 import { Dropdown, Space, Menu, Flex } from 'antd';
+import { useNavigate } from 'react-router-dom';
 
 const itemsDropdown = [
   {
@@ -17,11 +18,15 @@ const itemsDropdown = [
 
 function WlcmHeader() {
   const [openDropdown, setOpenDropdown] = useState(false);
+  const navigate = useNavigate();
 
   const handleDropClick = (e) => {
     console.log(e)
     if (e.key === '3') {
       setOpenDropdown(false);
+    }
+    if (e.key === '2') {
+      navigate('/')
     }
   };
 
